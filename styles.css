@@ -1,0 +1,394 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'League Spartan', Verdana, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: min(100%, 500px);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0%;
+    padding: 0 0 10px 0;
+}
+
+header section:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    margin: 0%;
+    padding: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 0%;
+    padding: 0 15px 3px 0;
+}
+
+.theme-1 {
+    background-color: hsl(222, 26%, 31%);
+    color: hsl(0, 0%, 100%);
+}
+
+.theme-2 {
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
+}
+
+.theme-3 {
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+
+#toggle-numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+    grid-template-rows: auto;
+    justify-content: stretch;
+    margin: 0%;
+    padding: 0 2px 0 2px;
+}
+
+#toggle-numbers span {
+    text-align: center;
+}
+
+/* Toggle button*/
+#toggle-bg {
+    display: flex;
+}
+
+.toggle-bg-theme-1 button {
+    background-color: hsl(6, 63%, 50%);
+    width: 33.333333333333%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    color: transparent;
+}
+
+.toggle-bg-theme-2 button {
+    background-color: hsl(25, 98%, 40%);
+    width: 33.333333333333%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    color: transparent;
+}
+
+.toggle-bg-theme-3 button {
+    background-color: hsl(176, 100%, 44%);
+    width: 33.333333333333%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    color: transparent;
+}
+
+.toggle-bg-theme-1 button:hover {
+    background-color: hsl(6, 63%, 70%);
+    cursor: pointer;
+}
+
+.toggle-bg-theme-2 button:hover {
+    background-color: hsl(25, 98%, 70%);
+    cursor: pointer;
+}
+
+.toggle-bg-theme-3 button:hover {
+    background-color: hsl(176, 100%, 70%);
+    cursor: pointer;
+}
+
+#toggle-bg {
+    height: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 3.5rem;
+    margin: 0%;
+    padding: 2px 3px;
+}
+
+body .toggle-bg-theme-1,
+body .keypad-bg-theme-1 {
+    background-color: hsl(223, 31%, 20%);
+}
+
+body .toggle-bg-theme-2,
+body .keypad-bg-theme-2 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+body .toggle-bg-theme-3,
+body .keypad-bg-theme-3,
+body div.screen-bg-theme-3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+body div.screen-bg-theme-1 {
+    background-color: hsl(224, 36%, 15%);
+}
+
+body div.screen-bg-theme-2 {
+    background-color: hsl(0, 0%, 93%);
+}
+
+#screen-bg {
+    text-align: right;
+    margin: 0 0 1rem;
+    padding: 1.5rem 1rem;
+}
+
+input,
+#screen-bg {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+input {
+    margin: 0%;
+    padding: 0.8rem;
+}
+
+#myOtherButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    grid-template-rows: auto;
+    justify-content: stretch;
+    margin: 0%;
+    padding: 1.5rem 0 0 0;
+}
+
+#myInputButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    grid-template-rows: auto;
+    justify-content: stretch;
+}
+
+.myInputButtons-theme1 input {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 4px hsl(28, 16%, 65%);
+}
+
+.myInputButtons-theme2 input {
+    background-color: hsl(45, 7%, 89%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0px 4px hsl(35, 11%, 61%);
+}
+
+.myInputButtons-theme3 input {
+    background-color: hsl(281, 89%, 26%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 4px hsl(285, 91%, 52%);
+}
+
+.myInputButtons-theme1 input:hover {
+    background-color: hsl(30, 25%, 98%);
+    cursor: pointer;
+}
+
+.myInputButtons-theme2 input:hover {
+    background-color: hsl(45, 7%, 99%);
+    cursor: pointer;
+}
+
+.myInputButtons-theme3 input:hover {
+    background-color: hsl(281, 89%, 75%);
+    cursor: pointer;
+}
+
+.myInputButtons-theme1 input[value="DEL"],
+.myOtherButtons-theme1 input[value="RESET"] {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+    font-size: 1.5rem;
+}
+
+.myInputButtons-theme2 input[value="DEL"],
+.myOtherButtons-theme2 input[value="RESET"] {
+    background-color: hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 4px hsl(185, 58%, 25%);
+    font-size: 1.5rem;
+}
+
+.myInputButtons-theme3 input[value="DEL"],
+.myOtherButtons-theme3 input[value="RESET"] {
+    background-color: hsl(281, 89%, 26%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 4px hsl(285, 91%, 52%);
+    font-size: 1.5rem;
+}
+
+.myInputButtons-theme1 input[value="DEL"]:hover,
+.myOtherButtons-theme1 input[value="RESET"]:hover {
+    background-color: hsl(225, 21%, 70%);
+    cursor: pointer;
+}
+
+.myInputButtons-theme2 input[value="DEL"]:hover,
+.myOtherButtons-theme2 input[value="RESET"]:hover {
+    background-color: hsl(185, 42%, 60%);
+    cursor: pointer;
+}
+
+.myInputButtons-theme3 input[value="DEL"]:hover,
+.myOtherButtons-theme3 input[value="RESET"]:hover {
+    background-color: hsl(281, 89%, 70%);
+    cursor: pointer;
+}
+
+.myOtherButtons-theme1 input[value="="] {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px hsl(6, 70%, 34%);
+    color: hsl(0, 0%, 100%);
+}
+
+.myOtherButtons-theme2 input[value="="] {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 4px hsl(25, 99%, 27%);
+    color: hsl(0, 0%, 100%);
+}
+
+.myOtherButtons-theme3 input[value="="] {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 4px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+.myOtherButtons-theme1 input[value="="]:hover {
+    background-color: hsl(6, 63%, 70%);
+    cursor: pointer;
+}
+
+.myOtherButtons-theme2 input[value="="]:hover {
+    background-color: hsl(25, 98%, 60%);
+    cursor: pointer;
+}
+
+.myOtherButtons-theme3 input[value="="]:hover {
+    background-color: hsl(176, 100%, 90%);
+    cursor: pointer;
+}
+
+#keypad-bg {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 0%;
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 396px) {
+    input,
+    #screen-bg {
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .myInputButtons-theme1 input[value="DEL"],
+    .myOtherButtons-theme1 input[value="RESET"] {
+        font-size: 1rem;
+        }
+
+    .myInputButtons-theme2 input[value="DEL"],
+    .myOtherButtons-theme2 input[value="RESET"] {
+        font-size: 1rem;
+    }
+
+    .myInputButtons-theme3 input[value="DEL"],
+    .myOtherButtons-theme3 input[value="RESET"] {
+        font-size: 1rem;
+    }
+
+    #myInputButtons {
+        gap: 1rem;
+    }
+
+    #keypad-bg {
+        padding: 1rem;
+        }
+
+    body {
+        padding: 1rem;
+        }
+}
+
+@media only screen and (max-width: 290px) {
+
+    input,
+    #screen-bg {
+        font-weight: 550;
+        font-size: 1.2rem;
+    }
+
+    .myInputButtons-theme1 input[value="DEL"],
+    .myOtherButtons-theme1 input[value="RESET"] {
+        font-size: 0.8rem;
+    }
+
+    .myInputButtons-theme2 input[value="DEL"],
+    .myOtherButtons-theme2 input[value="RESET"] {
+            font-size: 0.8rem;
+    }
+
+    .myInputButtons-theme3 input[value="DEL"],
+    .myOtherButtons-theme3 input[value="RESET"] {
+        font-size: 0.8rem;
+    }
+
+    #myInputButtons {
+        gap: 0.8rem;
+    }
+
+    #keypad-bg {
+        padding: 0.6rem;
+    }
+
+    body {
+        padding: 0.6rem;
+    }
+}
