@@ -97,7 +97,7 @@ h2 {
 
 .toggle-bg-theme-1 button {
     background-color: hsl(6, 63%, 50%);
-    width: 33.333333333333%;
+    width: 31%;
     height: 100%;
     border: 1px solid transparent;
     border-radius: 100px;
@@ -106,7 +106,7 @@ h2 {
 
 .toggle-bg-theme-2 button {
     background-color: hsl(25, 98%, 40%);
-    width: 33.333333333333%;
+    width: 31%;
     height: 100%;
     border: 1px solid transparent;
     border-radius: 100px;
@@ -115,7 +115,7 @@ h2 {
 
 .toggle-bg-theme-3 button {
     background-color: hsl(176, 100%, 44%);
-    width: 33.333333333333%;
+    width: 31%;
     height: 100%;
     border: 1px solid transparent;
     border-radius: 100px;
